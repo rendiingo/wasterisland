@@ -1,0 +1,12 @@
+filename = input("Enter the filename: ")
+name = input("Enter your name: ")
+address = input("Enter your street address: ")
+phone = input("Enter your phone number: ")
+
+with open(filename, 'w') as file:
+    file.write(f"{name},{address},{phone}")
+
+# Read the file and display its contents
+with open(filename, 'r') as file:
+    contents = file.read()
+    print(contents)
